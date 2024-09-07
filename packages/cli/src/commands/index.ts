@@ -1,37 +1,20 @@
-import { program } from 'commander'
-
-import pkg from '../../package.json'
-
 import { build } from './base/build'
 import { create } from './base/create'
+import { greet } from './base/greet'
 import { info } from './base/info'
 import { preview } from './base/preview'
 import { serve } from './base/serve'
 import { registerCommand } from './registerCommand'
 
-program.version(pkg.version).description(pkg.description)
 
-/**
- * Register the info command
- */
-registerCommand(info)
+registerCommand(create);
 
-/**
- * Register the build command
- */
-registerCommand(build)
+registerCommand(build);
 
-/**
- * Register the preview command
- */
-registerCommand(preview)
+registerCommand(serve);
 
-/**
- * Register the create command
- */
-registerCommand(create)
+registerCommand(greet);
 
-/**
- * Register the serve command
- */
-registerCommand(serve)
+registerCommand(info);
+
+registerCommand(preview);

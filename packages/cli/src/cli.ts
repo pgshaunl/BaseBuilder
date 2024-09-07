@@ -1,11 +1,10 @@
-import { program } from 'commander'
+import { program } from "commander"
 
 import './commands'
+import './utils/loadTemplate'
 
-export const defineConfig = () => {
-    
-}
+program.version('0.0.1').name('slpack')
 
-export const runCLI = () => {
-    program.parse(process.argv)
+export const run = (args: string[]) => {
+    program.parse(args)
 }
