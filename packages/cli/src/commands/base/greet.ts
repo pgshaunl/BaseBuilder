@@ -14,17 +14,6 @@ export function greet(program: Command) {
                 message: 'What is your name?'
             })
 
-            const hobbyRes = await prompts({
-                type: 'select',
-                name: 'hobby',
-                message: 'What is your hobby?',
-                choices: [
-                    { title: '🎮 Game', value: '🎮 Game' },
-                    { title: '🎨 Drawing', value: '🎨 Drawing' },
-                    { title: '🎸 Music', value: '🎸 Music' }
-                ]
-            })
-
-            logger.log(`Hey,${nameRes.name}!Your hobby is ${hobbyRes.hobby}`)
+            logger.log(` HELLO!!! ${nameRes.name}! Welcome to slpack!`)
         })
 }

@@ -18,7 +18,9 @@ export function serve(program: Command) {
             })
 
             child.on('close', code => {
-                logger.log(`The process exited with code: ${code}`)
+                if (code !== 0) {
+                    logger.error(`The process exited with code: ${code}`)
+                }
             })
         })
 }

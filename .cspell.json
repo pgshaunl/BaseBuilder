@@ -18,6 +18,7 @@
         "**/language/**",
         "**/language.ts",
         "**/package.json",
+        "**/packages/cli/templates/**",
         "eslint.config.js"
     ]
 }

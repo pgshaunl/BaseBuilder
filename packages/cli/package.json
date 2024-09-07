@@ -2,9 +2,9 @@
   "name": "@slpack/cli",
   "version": "0.0.1",
   "description": "a scaffold boilerplate",
-    "main": "index.js",
-    "module": "index.js",
-    "types": "index.d.ts",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
   "bin": {
       "slpack": "bin/slpack"  
   },

@@ -14,5 +14,5 @@ export const preview = (program: Command) =>
                 name: 'name',
                 message: 'What is your name?'
             })
-            logger.log(pc.green(`Hello, ${response.name}!`))
+            logger.log(pc.green(`Hello, ${response.name}! Welcome to use slpack`))
         })

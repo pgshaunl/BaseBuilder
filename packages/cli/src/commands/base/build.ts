@@ -8,7 +8,7 @@ export function build(program: Command) {
         .createCommand('build')
         .description('build project')
         .action(() => {
-            logger.info('build project')
+            logger.start('Building project...')
 
             const command = 'npm'
             const params = ['run', 'build']
@@ -16,9 +16,11 @@ export function build(program: Command) {
             const child = spawn(command, params, {
                 stdio: 'inherit'
             })
-
+            
             child.on('close', code => {
-                logger.log(`The process exited with code:${code}`)
+                if (code !== 0) {
+                    logger.error(`The process exited with code: ${code}`)
+                }
             })
         })
 }

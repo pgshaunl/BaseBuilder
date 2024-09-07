@@ -7,14 +7,14 @@ import { serve } from './base/serve'
 import { registerCommand } from './registerCommand'
 
 
-registerCommand(create);
+registerCommand(create)
 
-registerCommand(build);
+registerCommand(build)
 
-registerCommand(serve);
+registerCommand(serve)
 
-registerCommand(greet);
+registerCommand(greet)
 
-registerCommand(info);
+registerCommand(info)
 
-registerCommand(preview);
+registerCommand(preview)
